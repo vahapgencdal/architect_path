@@ -262,4 +262,69 @@ But still, most apps today fall into the categories we discussed.
 One of the first tasks you will have when beginning work on a system is to determine which application type is best suited for it. Often, system will comprise of more than one application and you will find yourself mixing and matching various types in a single system.  
 For example, many web apps have, in addition to the main application, also is services that run continuously and performs maintenance tasks such as removing all data records, monitoring various processes and so on. This is quite common and you will probably encounter these type of systems in your job.
 
+### SECTION 6 : Selecting Technology Stack  
+1. Technology Stack  
+    Welcome to the technology section in this section will discuss one of the most important and loaded tasks of the architect, and that is selecting the technology stock of the system. The selected technology stock will determine what language is. Platforms and tools will be used during system development and what are the skills required for the development team.
+    This decision is important for two reasons.
+    * One, it's irreversible.  
+    Once you've decided to use specific platform and work has begun on this platform, you can't reverse it. It's not possible to decide three months into development that actually we prefer another platform. Such a decision will result in a complete rewrite of the system and a substantial delay in schedule. There are some architectural patterns that allow some kind of flexibility in the technology stock selection, notably medical services. But even there, it's not a good idea to switch platforms between each service.  
+    * Reasonable to decisions like that are often loaded with emotions and are made on a non rational basis.
+    You will encounter situations where the development team would like to a specific platform because it's new, sexy and the team across the corridor already uses it. It won't matter that this technology is inferior for the specific task in hand, they will still want it. 
+    So this decision has to be made with a clear mind, must be heavily documented and to be a group effort. And not only was the architect in this section will discuss technology stock alternatives for the front  and back end and datastore for each alternative, we will give a little background and discuss it.
 
+2. Considereing Technology Selection
+    When selecting the technology stock, there are some considerations that must be taken into account in order to ensure the best platform will be used in the systems.  
+    * One can perform the required tasks.  
+        Well, this may sound trivial, but it's still important when looking at a specific platform. We must ensure this platform can actually perform what is required from it.  
+        For example, if one of the requirements to support growth platform deployment, it's important to make sure the technology we are looking at is actually a cross platform.  
+        Another example, if the requirements state that the systems user interface must be Web based. There is no point in exploring which cloud platforms 
+    * second community.  
+        You always want to make sure there is a large active community which discusses the platform and can provide support we needed this way. You know, you want to be left alone in the dark when encountering problems and questions and you can seek help in this community. the best place is look this support is **stackoverflow.com** 
+
+        So go to stack overflow click tags at the sidebar and look at the technology you are interested in. You will see a number near its name.This number will designate the number of questions on this technology. The larger the number, the more active the community is.
+        Always ready to actually click the name of the tag and go to the platforms page. There you can see when the last questions were asked.  This will give you some idea about how active the community is, not just how big it is. So if you see the last question was asked four days ago, it seems like the community is not very active.
+    * third Popularity
+        The popularity factor is quite important and popular platforms will usually lead to a small community which will lead to a lack of support. The best way to test the popularity of everything on the Internet is by using Google Trends. So go to Google Trends and type the name of the platform you are interested in.
+ 3. Backend and Service Technology  
+    So let's discuss our candidate for backing and service technology now to be clear, when talking about back in women's service, web apps and Web API. So our discussion here is about Web apps, Web API, console and services. here we are going to look pros and cons of platforms and depends of the requirement and team we should use our platform.
+    * .NET Classic
+        So let's begin with the classic or as we call it Dot Net here simply doesn't it?
+        * it was founded by Microsoft in 2001 as a response for Java. 
+        * It's a general-purpose 
+        * object oriented, 
+        * statically typed platform with frameworks for desktop applications called Windows and later on WPX and for Web Apps and API called a speed of net development 
+        * in dot net is done using Visual Studio. 
+        * dot net is not cross platform, so it's relevant only for Windows based applications. 
+        * It's performance are OK, but there are Fuster platforms such as Node is that 
+        * it is a very mature platform with huge third party components and glory community. 
+        * However, its roadmap is not clear since it looks like Microsoft is pushing the developers towards Natcore call today.  Dot net is a difficult choice for Windows based application, mainly because of its great EDEK syntax and large community  
+    * .NET Core
+        You can call it next generation dot net, and it aims to fill the gaps in dot net, 
+        * mainly cross platform support and performance. 
+        *  In my own experience, doing it is a flexible and fast platform.
+        * There are some glaring omission such as web hook support, partial or data support, partial or in support. And more apps can be developed using visual studio, but also with the code and other popular ideas.
+        * The core community is not that large but is very vocal and is growing rapidly in the stack overflow development sorry.
+        * It's called second among several side from right after analogy's in the long run dot com would be a great choice right now
+        * You should be aware about gaps, but also about automating performance and capabilities.
+    * Java
+        Java has been around for a long time and looks like it's here to stay.  
+        * Created in 1995 by Sun Microsystems, currently owned by Oracle, Java is one of the most popular platforms  in use today.
+        * Like Net, it's a general-purpose object oriented, statically typed language.
+        * It's really forays into client side in the form of Java applets. And later, Java Fix was not a huge success, but the Android ecosystem with we can natively in Java gave it a huge boost.
+        * The server side Java is called Java. IEEE recently changed to Jakarta Enterprise Edition and provides everything you can expect from a server side platform, including Web apps, Web API, database access and lots more.
+        * And all this in a cross platform environment.
+        * Java has a huge community, sometimes suffering from too much self-criticism, but still provides great support for everything.
+        * Java in the last year, it looks like the interest in Java on the back end has waned and new kids on the block get all the attention. But Java is still a great platform for Web apps, and with API
+    * Node JS
+        * It was founded on 2009 by Reindl and is optimized for highly concurrent Web apps. 
+        * IT syntax is based on JavaScript, which makes it dynamically typed and it quickly gained adoption because of its familiar syntax and great performance.
+        * It's probably one of the first frameworks out of fighting we don't it on the fifth place. As mentioned, logic is not targeted for long running processes, so don't try to build services with it.
+        * But for web apps that require a lot of short concurrent IYO operations, it should be on the top of the list.
+    * Python
+        * founded in 1989 by Greta Van Heusen and quickly became one of the most popular scripting language, Python quickly gained momentum as a language that can perform almost any task you can find inside applications written in other platforms, in machine learning systems.  
+        * And of course, as a Web app or Web API, one of the strongest selling point of Python is its learning.
+        * It is one of the easiest language to learn, and it's also very tolerant. 
+        * Python also has a large community which is known for its helpful members. 
+        * You can consider Python for almost any type of application, including web of what I call a console or service.
+    Here is the referance table for all languages
+    ![langs apps](./pictures/referance_table_langs.png)  
